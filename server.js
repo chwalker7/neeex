@@ -5,15 +5,15 @@ const path = require('path');
 const app = express();
 const port = 3001;
 
-app.use(express.static('public'));
+app.use(express.static('./'));
 
 // Serve index.html at the root URL
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.get('/images', (req, res) => {
-    const imagesDir = path.join(__dirname, 'public/images');
+    const imagesDir = path.join(__dirname, 'images');
     fs.readdir(imagesDir, (err, files) => {
         if (err) {
             return res.status(500).send('Unable to scan directory');
