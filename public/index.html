@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEE Excavation LLC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+    main { max-width: 800px; margin: 0 auto; }
+    img { max-width: 100%; height: auto; }
+
+    /* Slideshow Styles */
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+      /* Set a fixed aspect ratio */
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+
+    .mySlides {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .mySlides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* This will cover the area without stretching the image */
+      object-position: center; /* Center the image within the container */
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      z-index: 2;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NEE Excavation LLC</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Our Services</h2>
+            <div class="slideshow-container">
+                <!-- Slides will be dynamically added here by JavaScript -->
+            </div>
+            <br>
+            <div style="text-align:center">
+                <!-- Dots will be dynamically added here by JavaScript -->
+            </div>
+        </section>
+        <section>
+            <h2>Available Equipment</h2>
+            <ul>
+                <li>Dozer</li>
+                <li>Backhoe</li>
+                <li>Crawler</li>
+                <!-- Add more equipment items as needed -->
+            </ul>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Phone: (707) XXX-XXXX</p>
+            <p>Email: neeexcavation@gmail.com</p>
+            <p>Mailing Address: 123 Main St, Anytown USA</p>
+        </section>
+    </main>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
