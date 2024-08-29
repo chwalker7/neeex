@@ -5,19 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Updated list of image filenames with alt text
     const imageList = [
-        { filename: '1.jpg', alt: 'Excavation project in progress' },
-        { filename: '2.jpg', alt: 'Dozer clearing land' },
-        { filename: '3.jpg', alt: 'Backhoe digging a trench' },
-        { filename: '4.jpg', alt: 'Site preparation for construction' },
-        { filename: '5.jpg', alt: 'Grading a large area' },
-        { filename: '6.jpg', alt: 'Foundation excavation for a building' },
-        { filename: '7.jpg', alt: 'Heavy machinery at work on a job site' },
-        { filename: '8.jpg', alt: 'Aerial view of an excavation project' },
-        { filename: '9.jpg', alt: 'Excavator loading dirt into a dump truck' },
-        { filename: '10.jpg', alt: 'Leveling ground for a new construction' },
-        { filename: '11.jpg', alt: 'Precision excavation work' },
-        { filename: '12.jpg', alt: 'Large-scale earthmoving project' },
-        { filename: '13.jpg', alt: 'NEE Excavation LLC equipment on site' }
+        { filename: '1.webp', alt: 'Excavation project in progress' },
+        { filename: '2.webp', alt: 'Dozer clearing land' },
+        { filename: '3.webp', alt: 'Backhoe digging a trench' },
+        { filename: '4.webp', alt: 'Site preparation for construction' },
+        { filename: '5.webp', alt: 'Grading a large area' },
+        { filename: '6.webp', alt: 'Foundation excavation for a building' },
+        { filename: '7.webp', alt: 'Heavy machinery at work on a job site' },
+        { filename: '8.webp', alt: 'Aerial view of an excavation project' },
+        { filename: '9.webp', alt: 'Excavator loading dirt into a dump truck' },
+        { filename: '10.webp', alt: 'Leveling ground for a new construction' },
+        { filename: '11.webp', alt: 'Precision excavation work' },
+        { filename: '12.webp', alt: 'Large-scale earthmoving project' },
+        { filename: '13.webp', alt: 'NEE Excavation LLC equipment on site' }
     ];
 
     function loadImages() {
