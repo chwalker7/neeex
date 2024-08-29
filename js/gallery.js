@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const slideShowContainer = document.querySelector('.slideshow-container');
     const dotContainer = document.querySelector('div[style="text-align:center"]');
+    let autoSlideInterval;
 
     // Updated list of image filenames
     const imageList = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg'];
@@ -51,7 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
         showSlides(1);
     }
 
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(() => plusSlides(1), 5000); // Change slide every 5 seconds
+    }
+
     loadImages();
+    startAutoSlide();
 });
 
 let slideIndex = 1;

@@ -8,6 +8,7 @@
     <style>
     main { max-width: 800px; margin: 0 auto; }
     img { max-width: 100%; height: auto; }
+    h1, h2 { text-align: center; } /* Center align headings */
 
     /* Slideshow Styles */
     * {box-sizing: border-box}
@@ -24,6 +25,7 @@
       padding-bottom: 56.25%; /* 16:9 aspect ratio */
       height: 0;
       overflow: hidden;
+      transition: all 0.5s ease-in-out;
     }
 
     .mySlides {
@@ -39,6 +41,7 @@
       height: 100%;
       object-fit: cover; /* This will cover the area without stretching the image */
       object-position: center; /* Center the image within the container */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     /* Next & previous buttons */
@@ -130,6 +133,13 @@
     <header>
         <h1>NEE Excavation LLC</h1>
     </header>
+    <nav>
+        <ul style="list-style: none; display: flex; justify-content: center; padding: 0;">
+            <li style="margin: 0 15px;"><a href="#" style="text-decoration: none; color: inherit;">Home</a></li>
+            <li style="margin: 0 15px;"><a href="#" style="text-decoration: none; color: inherit;">Services</a></li>
+            <li style="margin: 0 15px;"><a href="#" style="text-decoration: none; color: inherit;">Contact</a></li>
+        </ul>
+    </nav>
     <main>
         <section>
             <h2>Our Services</h2>
