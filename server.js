@@ -18,7 +18,7 @@ app.get('/images', (req, res) => {
         if (err) {
             return res.status(500).send('Unable to scan directory');
         }
-        const images = files.filter(file => /\.(jpg|jpeg|png|gif)$/.test(file));
+        const images = files.filter(file => /\.(jpg|jpeg|png|gif|webp)$/.test(file));
         res.json(images);
     });
 });
