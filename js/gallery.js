@@ -5,19 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Updated list of image filenames with alt text
     const imageList = [
-        { filename: '1.webp', alt: 'Excavation project in progress' },
+        { filename: '1.webp', alt: 'Equipment delivery' },
         { filename: '2.webp', alt: 'Dozer clearing land' },
-        { filename: '3.webp', alt: 'Backhoe digging a trench' },
+        { filename: '3.webp', alt: 'Dozer digging a trench' },
         { filename: '4.webp', alt: 'Site preparation for construction' },
         { filename: '5.webp', alt: 'Grading a large area' },
-        { filename: '6.webp', alt: 'Foundation excavation for a building' },
+        { filename: '6.webp', alt: 'Grading a large area' },
         { filename: '7.webp', alt: 'Heavy machinery at work on a job site' },
         { filename: '8.webp', alt: 'Aerial view of an excavation project' },
-        { filename: '9.webp', alt: 'Excavator loading dirt into a dump truck' },
+        { filename: '9.webp', alt: 'Heavy machinery at work on a job site' },
         { filename: '10.webp', alt: 'Leveling ground for a new construction' },
         { filename: '11.webp', alt: 'Precision excavation work' },
         { filename: '12.webp', alt: 'Large-scale earthmoving project' },
-        { filename: '13.webp', alt: 'NEE Excavation LLC equipment on site' }
+        { filename: '13.webp', alt: 'Excavation and equipment on site' }
     ];
 
     function loadImages() {
