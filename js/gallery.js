@@ -3,11 +3,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const dotContainer = document.querySelector('div[style="text-align:center"]');
     let autoSlideInterval;
 
-    // Updated list of image filenames
-    const imageList = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg'];
+    // Updated list of image filenames with alt text
+    const imageList = [
+        { filename: '1.jpg', alt: 'Excavation project in progress' },
+        { filename: '2.jpg', alt: 'Dozer clearing land' },
+        { filename: '3.jpg', alt: 'Backhoe digging a trench' },
+        { filename: '4.jpg', alt: 'Site preparation for construction' },
+        { filename: '5.jpg', alt: 'Grading a large area' },
+        { filename: '6.jpg', alt: 'Foundation excavation for a building' },
+        { filename: '7.jpg', alt: 'Heavy machinery at work on a job site' },
+        { filename: '8.jpg', alt: 'Aerial view of an excavation project' },
+        { filename: '9.jpg', alt: 'Excavator loading dirt into a dump truck' },
+        { filename: '10.jpg', alt: 'Leveling ground for a new construction' },
+        { filename: '11.jpg', alt: 'Precision excavation work' },
+        { filename: '12.jpg', alt: 'Large-scale earthmoving project' },
+        { filename: '13.jpg', alt: 'NEE Excavation LLC equipment on site' }
+    ];
 
     function loadImages() {
-        imageList.forEach((imageName, index) => {
+        imageList.forEach((image, index) => {
             const slide = document.createElement('div');
             slide.className = 'mySlides fade';
 
@@ -16,12 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
             numberText.textContent = `${index + 1} / ${imageList.length}`;
 
             const img = new Image();
-            img.src = `images/${imageName}`;
+            img.src = `images/${image.filename}`;
+            img.alt = image.alt;
             img.style.width = '100%';
 
             const text = document.createElement('div');
             text.className = 'text';
-            text.textContent = `Image ${index + 1}`;
+            text.textContent = image.alt;
 
             slide.appendChild(numberText);
             slide.appendChild(img);
@@ -40,11 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
         prevButton.className = 'prev';
         prevButton.onclick = () => plusSlides(-1);
         prevButton.innerHTML = '&#10094;';
+        prevButton.setAttribute('aria-label', 'Previous slide');
 
         const nextButton = document.createElement('a');
         nextButton.className = 'next';
         nextButton.onclick = () => plusSlides(1);
         nextButton.innerHTML = '&#10095;';
+        nextButton.setAttribute('aria-label', 'Next slide');
 
         slideShowContainer.appendChild(prevButton);
         slideShowContainer.appendChild(nextButton);
