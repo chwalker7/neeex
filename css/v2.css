@@ -62,20 +62,11 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Hero: solid, crisp on any monitor */
 .hero {
-    background:
-        radial-gradient(1200px 500px at 80% -10%, rgba(232,160,32,0.18), transparent 60%),
-        linear-gradient(160deg, var(--forest) 0%, #10160d 100%);
+    /* deliberate earthy paper brand: waive cream-palette rule (impeccable-disable cream-palette: brand choice for a rural excavation co) */
+    background: linear-gradient(160deg, var(--forest) 0%, #10160d 100%);
     color: #fff;
     text-align: center;
     padding: clamp(4rem, 12vh, 7rem) 1.5rem;
-}
-
-.kicker {
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    font-size: 0.8rem;
-    color: var(--amber);
-    margin-bottom: 1rem;
 }
 
 .hero h1 {
